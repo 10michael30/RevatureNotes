@@ -1,0 +1,16 @@
+package q17;
+
+public class Interest {
+
+	
+	public double InterestCalc(double principal,double roi,double time) {
+		double g=principal*.1;
+		double e=roi*.1;
+		return g*e*time;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

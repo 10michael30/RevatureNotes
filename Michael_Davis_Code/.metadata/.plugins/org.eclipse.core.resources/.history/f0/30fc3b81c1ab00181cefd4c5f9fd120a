@@ -1,0 +1,28 @@
+package com.ex.data;
+
+import com.ex.models.User;
+
+public class UserRepository {
+public User findById(int id) {
+	
+}
+
+public List<User> findAll(){
+	
+}
+
+
+
+public User save(User u) {
+	
+}
+
+
+public User update(User u) {
+	
+}
+
+public User findByUsername(String name) {
+	
+}
+}

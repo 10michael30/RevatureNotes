@@ -1,0 +1,7 @@
+package com.reimbursement.service;
+
+import com.reimbursement.dao.ReimbursementDao;
+
+public class ReimbursementService extends ReimbursementDao {
+
+}

@@ -1,0 +1,32 @@
+
+public class Operations {
+
+	
+	static String toBinary(int x) {
+		String out="";
+		
+		while(x>0) {
+			
+		}
+		
+		return out;
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		/*
+		 * 
+		 * System.out.prinln(toBinary(100));1100100
+		 * 
+		 * System.out.prinln(toBinary(x>>2));0011001
+		 * 
+		 * System.out.prinln(toBinary(x<<2));110010000
+		 *
+		 * 
+		 */
+
+	}
+
+}

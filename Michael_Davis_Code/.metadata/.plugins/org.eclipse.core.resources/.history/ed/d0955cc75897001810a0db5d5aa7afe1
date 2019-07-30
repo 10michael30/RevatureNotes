@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>maven</groupId>
+  <artifactId>fundamentalproject</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>mavenproject</name>
+  <description>Into to Maven</description>
+  
+  <!-- Pom.xml
+  
+  The Pom or project object model is the fndamental unit of work in Maven. 
+  It is an xml file that contains information about the project and configuration details 
+  used by Maven to build the project
+  
+  Build means to take your source code and compile it into object code or whatever form is used for actually running
+   
+   
+   XML- extensible markup language. it is a markup language that is typically used
+   to define a set of rules for documents and frameworks. It has elements denoted in <tags> and between openeing and closing
+   tags holds the value of the element.
+   
+   related topics: valid vs well formed,DTD,XMLNS,XML parsing,
+   
+   
+   Makrup Language- a system for annotating a doc in a way that is syntactially different from text
+   
+   -->
+   
+   static int[] b=new int[] {1,0,5,6,3,2,3,7,9,8,4};
+	
+	public static int[] bubSor() {
+	for (int i=0; i<b.length-1; i++) {	
+		int temp;
+		if(b[i]>b[i+1]) {
+			temp=b[i];			
+			b[i]=b[i+1];
+			b[i+1]=temp;		
+		}	
+	}
+	
+	return b;
+   
+</project>
+

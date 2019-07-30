@@ -1,0 +1,5 @@
+package q18;
+
+public abstract class Parent2 {
+
+}

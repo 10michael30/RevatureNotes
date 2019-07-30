@@ -1,0 +1,55 @@
+package q15;
+
+public class TI84 implements TheCalc {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public double add(int a,int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double subtract(int a, int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double multiply(int a,int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	public double divide(int a,int b) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+
+	@Override
+	public double add() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double subtract() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double multiply() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public double divide() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

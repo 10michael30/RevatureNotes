@@ -1,0 +1,13 @@
+package com.ex.beans;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
+@Table(name="Books")
+public class Book {
+
+}

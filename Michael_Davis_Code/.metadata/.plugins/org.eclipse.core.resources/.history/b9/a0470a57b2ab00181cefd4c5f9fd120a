@@ -1,0 +1,23 @@
+package com.reimbursement.servlets;
+
+import java.io.IOException;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/logout")
+public class logoutServlet extends HttpServlet {
+	
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		//REQUEST DISPATCHER! Used for forwarding
+		
+		//req.getRequestDispatcher("partials/loginView.html").forward(req, resp);
+		
+		resp.sendRedirect("home");
+	}
+
+}

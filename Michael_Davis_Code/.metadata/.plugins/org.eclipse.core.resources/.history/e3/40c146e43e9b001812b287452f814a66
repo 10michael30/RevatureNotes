@@ -1,0 +1,24 @@
+package com.rev.util;
+
+public class connectionFactory {
+	/*
+	 * 
+	 * Class used to establish a connection with database
+	 * Uses singleton design pattern as to return same single
+	 * connection each time one is requested.
+	 * 
+	 * In order to establish a connection, we need 4 things
+	 * :Driver,URL(location of database), username,password
+	 */
+	
+  private static connectionFactory cf=null;
+  private static Boolean build=true;
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,24 @@
+package com.ex.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.ex.beans.User;
+
+public class UserService {
+
+	static ArrayList<User> users =new ArrayList<User>();
+	
+	
+	static {
+		
+		users.add(new User("Mike","My Bio","password"));
+		users.add(new User("Tom","toms Bio","password"));
+		users.add(new User("Jerry","Jerry Bio","password"));
+	}
+	
+	public List<User> getAll(){
+		return users;
+		
+	}
+}

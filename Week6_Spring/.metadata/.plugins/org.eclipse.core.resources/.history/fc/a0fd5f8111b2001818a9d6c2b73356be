@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+	xmlns:repository="http://www.springframework.org/schema/data/repository"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.8.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.2.xsd
+		http://www.springframework.org/schema/data/repository http://www.springframework.org/schema/data/repository/spring-repository-1.11.xsd">
+
+<context:annotation-config/>
+
+<!-- where to look for annotations -->
+
+<context:component-scan base-package="com.ex"/>
+
+
+<tx:annotation-driven/>
+
+
+<!-- contextual sessions configure hibernate with spring -->
+
+
+
+<!-- where to look for repositories -->
+<jpa:repositories base-package="com.ex.repositories"/>
+
+<bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource">
+<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver"/>
+<property name="url" value="jdbc:oracle:thin:@mdavisdb.casvmhchbrk0.us-east-1.rds.amazonaws.com:1521/ORCL"/>
+<property name="username" value="mdavisdb"/>
+<property name="password" value="password!"/>
+</bean>
+
+<!-- spring data is not natively compatible w hibernate we must configure 
+it w jpa compliant frameworks using vendor adapter -->
+
+<bean id="entityManagerFactory" class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+<property name="dataSource" ref="myDataSource"/>
+<property name="jpaVendorAdapter" ref="hibernateJpaVendorAdapter"/>
+<property name="packagesToScan" value="com.ex"/>
+
+<property name="jpaProperties">
+<props>
+	<prop key="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</prop>
+	<prop key="hibernate.show_sql">true</prop>
+	<prop key="hibernate.format_sql">true</prop>
+	<prop key="hibernate.hbm2ddl.auto">create</prop>
+	</props>
+</property>
+</bean>
+<bean id="transactionManager"></bean>
+
+
+</beans>

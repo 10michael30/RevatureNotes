@@ -1,0 +1,30 @@
+package q6;
+
+public class EvenOrOdd {
+	
+	static boolean calc(int a){
+		
+		int h=a;
+		int holder=0;
+		while(h>1) {
+			
+			holder=h/2;
+			
+		}
+		
+		if(holder>1) {
+			return false;
+		}
+		
+		else return true;
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,44 @@
+
+class Checkings extends Account {
+	String accType;
+	int accNumber;
+	int pin;
+	String name;
+	String phone;
+	public Checkings() {
+		
+		
+	}
+
+	
+
+	@Override
+	public void checkAccType() {
+		System.out.println("This is a checking account");
+	}
+
+	@Override
+	public void checkAccNumber() {
+		// TODO Auto-generated method stub
+		super.checkAccNumber();
+	}
+
+
+
+	@Override
+	public void resetPin() {
+		// TODO Auto-generated method stub
+		super.resetPin();
+	}
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Checkings a=new Checkings();
+		a.
+
+	}
+
+}

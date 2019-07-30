@@ -1,0 +1,42 @@
+package q20;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class fileWrite {
+//Class used to read from and write to text file
+	
+	
+	void addStudent() {
+		//name;email;grade
+		
+		//BufferedWriter
+		//FileWriter
+		
+		/*TRY WITH RESOURCES
+		 * Parameterized try block used with classes that 
+		 * implement the AutoCloseable interface so that
+		 * you do not need a finally block to close your
+		 * resource after using it
+		 */
+		try (BufferedWriter bw = new BufferedWriter(
+				//the word true here stops it from overwriting my firstline
+				//and makes it make a new input every time
+				new FileWriter("src/files/Data.txt",true));){
+			bw.write("Mickey:Mouse:35:Arizona");
+			bw.write("Hulk:Hogan:50:Virginia");
+			bw.write("Roger:Rabbit:22:California");
+			bw.write("Wonder:Woman:18:Montana");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

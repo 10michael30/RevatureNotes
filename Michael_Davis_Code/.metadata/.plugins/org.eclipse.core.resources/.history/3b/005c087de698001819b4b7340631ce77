@@ -1,0 +1,24 @@
+package q4;
+
+public class compFactorial {
+	static int o=0;
+	static int result2=0;
+	
+	static int compute(int n) {
+		
+		  int x, fact = 1;
+		  for ( x = n; x > 1; x--)
+		     fact *= x;
+
+		  return fact;
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(compute(4));
+
+	}
+
+}

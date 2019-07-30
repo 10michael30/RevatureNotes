@@ -1,0 +1,33 @@
+import java.util.*;
+public class demonstrate {
+	
+	
+	
+	static void Examps(String name, int age) {
+		int g=0;
+		while(g<name.length()) {
+			System.out.print("The "+g+" letter in your name is ");
+			System.out.println(name.substring(g,g+1));
+			g++;
+		}
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Examps("Michael",23);
+
+	}
+
+
+
+	
+
+}

@@ -1,0 +1,6 @@
+package q18;
+
+public abstract class Parent3 {
+public abstract int StringToInt();
+}
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+<table class="table table-sm table-hover table-bordered thead-light">
+	<thead>
+		<tr>
+			<th scope="col">UserName</th>
+			<th scope="col">Email</th>
+			<th scope="col">Role</th>
+		</tr>
+	</thead>
+	<tbody id="userTable">
+	</tbody>
+</table>
+</div>
+</body>
+</html>

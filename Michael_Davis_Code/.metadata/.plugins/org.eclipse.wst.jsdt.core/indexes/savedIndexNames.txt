@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+C:\mm\1807Jul30Java\Michael_Davis_Code\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+986378132.index
+2741793602.index
+1940084358.index
+2739389747.index
+3602532002.index
+736546947.index

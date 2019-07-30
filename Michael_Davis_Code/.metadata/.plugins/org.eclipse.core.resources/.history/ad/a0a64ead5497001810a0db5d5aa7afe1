@@ -1,0 +1,52 @@
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.BeforeClass;
+import org.junit.Test;
+
+public class MethodsTest {
+	
+	/*
+	 * 
+	 * j UNIT IS A JAVA TESTING FRAMEWORK
+	 * 
+	 * annotations associated with j unit
+	 * 
+	 * before class
+	 * after class
+	 * before
+	 * after
+	 * test
+	 * 
+	 * test driven development means that you understand your end goal and that
+	 * if successful your program will pass x test or a series of test.
+	 */
+
+	@BeforeClass
+	public static void setUpBeforeClass() throws Exception {
+		System.out.println("before class");
+	}
+
+	@AfterClass
+	public static void tearDownAfterClass() throws Exception {
+		System.out.println("after class");
+	}
+
+	@Before
+	public void setUp() throws Exception {
+		System.out.println("before class..");
+	}
+
+	@After
+	public void tearDown() throws Exception {
+		System.out.println("after class..");
+	}
+
+	@Test
+	public void test() {
+		fail("Not yet implemented");
+	}
+
+}

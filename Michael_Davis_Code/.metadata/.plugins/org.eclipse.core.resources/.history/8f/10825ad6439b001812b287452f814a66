@@ -1,0 +1,43 @@
+package com.rev.dao;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.rev.pojos.Genre;
+import com.rev.util.connectionFactory;
+
+public class GenreDao {
+
+	
+	public List<Genre> findAll(){
+	
+		
+		List<Genre> genres=new ArrayList<Genre>();
+		
+		
+		try(Connection conn= connectionFactory.getInstance().getConnection()){
+			String query="select * from genre";
+			
+			//STATEMENT INTERFACE
+			Statement statement=conn.createStatement();
+			ResultSet rs=statement.executeQuery(query);
+			
+			while(rs.next()) {
+				//iterate through rows of set
+				Genre temp=new Genre();
+				
+				temp.setId(rs.getInt(1));
+				temp.setName(rs.getString("Name"));
+				
+				genres.add(temp);
+			}
+;		}
+		
+		catch(Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

@@ -1,0 +1,18 @@
+import java.io.FileOutputStream;
+import java.io.ObjectOutputStream;
+
+public class Serialization {
+	
+	static Object SerializeObject(Object o) {
+		
+		try (ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream("src/files/serial.txt)))"))){
+		oos.writeObject(o);
+		
+		}
+		catch (Exception e) {
+			
+		}
+		return "";
+	}
+
+}

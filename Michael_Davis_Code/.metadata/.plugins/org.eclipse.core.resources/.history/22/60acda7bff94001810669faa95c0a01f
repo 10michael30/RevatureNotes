@@ -1,0 +1,24 @@
+
+public abstract class Account {
+
+	private int accountNumber;
+	private String customerName;
+	private String type;
+	private int pin;
+	private String phone;
+	
+	public void setUpAcc() {
+		
+	};
+	
+	public void checkAccType() {
+		
+	}
+	public void checkAccNumber() {
+		
+	}
+	
+	public void resetPin() {
+		
+	}
+}

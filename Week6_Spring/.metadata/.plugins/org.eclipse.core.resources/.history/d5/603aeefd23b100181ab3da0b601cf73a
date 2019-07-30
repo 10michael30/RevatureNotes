@@ -1,0 +1,33 @@
+package com.ex.repository;
+
+import java.util.List;
+
+import com.ex.beans.Author;
+
+public class AuthorRepoImpl implements AuthorRepository{
+
+	@Override
+	public List<Author> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Author getById(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Author add(Author a) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void update(Author a) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

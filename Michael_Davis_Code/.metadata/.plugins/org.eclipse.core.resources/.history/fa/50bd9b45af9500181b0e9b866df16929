@@ -1,0 +1,21 @@
+
+public class Operations {
+
+	
+	static String toBinary(int x) {
+		String out="";
+		
+		while(x>0) {
+			
+		}
+		
+		return out;
+		
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

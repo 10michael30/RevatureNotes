@@ -1,0 +1,30 @@
+package q4;
+
+public class compFactorial {
+	
+	static int result2;
+	
+	static int compute(int n) {
+		
+		//int holder=n;
+		
+		if(n==0) {
+			return result2;
+			
+		}
+		else {
+		int result=n*n-1;
+		result2=result;
+		
+		return compute(result);
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(compute(4));
+
+	}
+
+}

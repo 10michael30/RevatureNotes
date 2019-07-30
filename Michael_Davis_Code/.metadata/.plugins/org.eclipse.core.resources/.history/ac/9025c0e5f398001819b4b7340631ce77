@@ -1,0 +1,17 @@
+package q9;
+
+import java.util.ArrayList;
+
+public class Primes {
+	ArrayList<int> c=new ArrayList<>();
+static int ReturnPrimes() {
+	
+	return 0;
+	
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

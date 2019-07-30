@@ -1,0 +1,31 @@
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+public class Serialization {
+	
+	static Object SerializeObject(Object o) {
+		
+		try (ObjectOutputStream oos=new ObjectOutputStream(new FileOutputStream("src/files/serial.txt)))"))){
+		oos.writeObject(o);
+		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "";
+	}
+
+static Object deerializeObject(Object o) {
+		Object obj=null;
+		try (ObjectInputStream ois=new ObjectInputStream(new FileInputStream("src/files/serial.txt)))"))){
+	obj=ois.readObject();
+		
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
+		return "";
+	}
+}

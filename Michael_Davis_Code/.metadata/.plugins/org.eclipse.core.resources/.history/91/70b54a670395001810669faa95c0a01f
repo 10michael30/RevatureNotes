@@ -1,0 +1,14 @@
+
+public interface Account {
+
+	
+	
+     void setUpAcc();
+	
+	 void checkAccType();
+	 void checkAccNumber();
+	
+	 void resetPin();
+
+	void resetPin(int x);
+}

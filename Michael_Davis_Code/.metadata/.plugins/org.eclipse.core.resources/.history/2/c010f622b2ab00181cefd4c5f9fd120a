@@ -1,0 +1,8 @@
+package com.reimbursement.servlets;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/logout")
+public class logoutServlet {
+
+}

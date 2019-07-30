@@ -1,0 +1,18 @@
+
+class Checkings extends Account {
+
+	public void Account() {
+		
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Checkings a=new Checkings();
+
+	}
+
+}

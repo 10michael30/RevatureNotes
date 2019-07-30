@@ -1,0 +1,74 @@
+import java.util.*;
+public class demonstrate {
+	
+	private int Age;
+	private String address;
+	private String email;
+	public demonstrate() {
+		
+	}
+	
+	
+	static void Examps(String name, int age) {
+		int g=0;
+		
+		while(g<name.length()) {
+			if(g==0) {
+				System.out.println("The 1 letter in your name is "+name.substring(0,1));
+			g++;
+			}
+			
+			else {
+				int holder=g+1;
+			System.out.print("The "+holder+" letter in your name is ");
+			System.out.println(name.substring(g,g+1));
+			g++;
+			}
+		}
+		//enum 
+
+		
+		
+		switch(g) {
+		
+		 
+		case 1: System.out.println("first case");
+		case 2: System.out.println("first case");
+		case 3: System.out.println("first case");
+		case 4: System.out.println("first case");
+		case 5: System.out.println("first case");
+		case 6: System.out.println("first case");
+		
+		
+		default:System.out.println("blah");
+		}
+
+		
+		
+	}
+	
+	
+	static void ca2(String name1,String name2,String name3,String name4,String name5){
+		String[]names=new String[10];
+		int count=1;
+		
+		
+		
+	}
+	
+	
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Examps("Michael",23);
+
+	}
+
+
+
+	
+
+}

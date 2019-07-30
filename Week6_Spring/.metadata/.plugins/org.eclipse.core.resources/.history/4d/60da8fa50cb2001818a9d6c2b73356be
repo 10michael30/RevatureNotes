@@ -1,0 +1,8 @@
+package com.ex.controller;
+
+
+@RestController("/authors")
+public class RestController {
+	
+
+}

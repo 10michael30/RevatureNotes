@@ -1,0 +1,27 @@
+package com.ex.lifecycle;
+
+public class Life {
+	
+	public Life(String circleOfLife) {
+		super();
+		this.circleOfLife = circleOfLife;
+	}
+
+	public String getCircleOfLife() {
+		return circleOfLife;
+	}
+
+	public void setCircleOfLife(String circleOfLife) {
+		this.circleOfLife = circleOfLife;
+	}
+
+	public Life() {
+		super();
+	}
+	public void live() {
+		System.out.println("Im ready to fight the fire lord");
+	}
+
+	private String circleOfLife;
+
+}

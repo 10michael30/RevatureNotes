@@ -1,0 +1,15 @@
+package com.ex.aspects;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class BasicAspect {
+	
+	//ADVICE-to be applied before every method indicated in the pointcut
+	public void helloAOP() {
+		System.out.println("Welcome to Spring AOP");
+	}
+
+}

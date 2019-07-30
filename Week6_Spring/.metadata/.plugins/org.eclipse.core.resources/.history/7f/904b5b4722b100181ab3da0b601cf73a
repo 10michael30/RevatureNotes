@@ -1,0 +1,40 @@
+package com.ex.beans;
+
+import java.util.Set;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+import org.springframework.stereotype.Component;
+
+@Entity
+@Component
+@Table(name="Books")
+public class Book {
+	
+	@Id
+	@Column(name="Book_Id")
+	@SequenceGenerator(name="book_seq_gen",sequenceName="Book_SEQ",allocationSize=1)
+	@GeneratedValue(generator="book_seq_gen",strategy=GenerationType.SEQUENCE)
+	private int id;
+	
+	@Column(name="Title",nullable=false)
+	private String title;
+	
+	@Column(name="ISBN",nullable=false,unique=true)
+	private String isbn;
+	
+	@Column(name="Price",nullable=false)
+	private double price;
+	
+	@Column(name="Genre",nullable=false)
+	private Genre genre;
+	private Set<Author> authors;
+	
+
+}

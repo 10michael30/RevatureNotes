@@ -1,0 +1,37 @@
+package com.ex.data;
+
+import org.hibernate.Session;
+
+import com.ex.models.User;
+
+import com.ex.util.ConnectionUtil;
+
+public class UserRepository {
+public User findById(int id) {
+	
+	Session session=ConnectionUtil.getSession();
+	User b=session.get(User.class, id);
+	session.close();
+	return b;
+	
+}
+
+public List<User> findAll(){
+	
+}
+
+
+
+public User save(User u) {
+	
+}
+
+
+public User update(User u) {
+	
+}
+
+public User findByUsername(String name) {
+	
+}
+}

@@ -1,0 +1,27 @@
+package q14;
+
+import java.util.Scanner;
+
+public class SwitchExample {
+	
+	
+	public void Switch(int a){
+		
+		switch(a){
+			case 1:
+				Scanner t= new Scanner(System.in);
+				
+			case 2:
+				
+			case 3:
+			
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

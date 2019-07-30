@@ -1,0 +1,28 @@
+package q4;
+
+public class compFactorial {
+	static int o=0;
+	static int result2=0;
+	
+	static int compute(int n) {
+		
+		o=n;
+		
+		while(o<1) {
+			result2=result
+		}
+		
+		
+		return n;
+		
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(compute(4));
+
+	}
+
+}

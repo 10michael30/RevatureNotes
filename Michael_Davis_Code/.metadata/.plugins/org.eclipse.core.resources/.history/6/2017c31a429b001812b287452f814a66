@@ -1,0 +1,16 @@
+package com.rev.dao;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.rev.pojos.Genre;
+
+public class GenreDao {
+
+	
+	public List<Genre> findAll(){
+	
+		
+		List<Genre> genres=new ArrayList<Genre>();
+	}
+}

@@ -1,0 +1,198 @@
+package com.rev.menu;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BankMenu {
+	private static String currentUser=null;
+	private static String userPassword=null;
+	private String holder;
+	private ArrayList<String> holderArray;
+	static Scanner keyboard=new Scanner(System.in);
+	private static int userID;
+	
+	public static void startMenu() {
+		String response;
+		
+		System.out.println("Welcome to Mike's Bank. Do you already have an Account with us?");
+		System.out.println("Type Yes or No");
+		response=keyboard.nextLine();
+		
+		if(response.equalsIgnoreCase("YES")) {
+			setLogin();
+		}
+		
+		else if(response.equalsIgnoreCase("NO")) {
+			createAccount();
+		}
+		else startMenu();
+		
+		
+		
+	}
+	
+	public static void createAccount() {
+		String firstname;
+		String lastname;
+		String email="";
+		String phone;
+		String username;
+		String password;
+		String password2;
+		Boolean c=false;
+		Boolean pwdMatch=false;
+		
+		System.out.println("Enter your First Name");
+		firstname=keyboard.next();
+		
+		System.out.println("Enter your Last Name");
+		lastname=keyboard.next();
+		System.out.println("Enter your current Email Address");
+		email=keyboard.next();
+		if((email.contains("@"))&&(email.contains("."))){
+			c=true;
+		}
+		while(c==false) {
+			System.out.println("invalid email address. Please Re-Enter a valid email");
+			email=keyboard.next();
+			
+			if((email.contains("@"))&&(email.contains("."))){
+				c=true;
+			}
+			
+		}
+		
+		System.out.println("Enter your phone number");
+		phone=keyboard.next();
+		
+		System.out.println("Enter your desired username");
+		username=keyboard.next();
+		//going to have to already have logic here to check if username is already taken
+		//can put up at the top and store 
+	
+		while(pwdMatch=false) {
+		System.out.println("Enter a Password for your account");
+		password=keyboard.next();
+		System.out.println("Re enter your password");
+		password2=keyboard.next();
+		
+		if (password.equals(password2)) {pwdMatch=true;}
+		}
+		
+		
+		//PUT LOGIC TO INSERT INTO USERS TABLE USING VARIABLES HERE
+		
+		
+		/*
+		 * then either set curent user login variables or return them to login
+		 * method to do it themselves
+		 */
+		
+		
+	}
+	public static void setLogin() {
+		String usr;
+		String pwd;
+		
+		System.out.println("Please enter your Username");
+		usr=keyboard.next();
+		
+		if(usr.length()>20) { 
+			System.out.println("Invalid Username");
+			setLogin();}
+		System.out.println("Please enter your password");
+		pwd=keyboard.next();
+		
+		
+		//ADD LOGIN TO CHECK FOR MATCHING INFO IN DB
+		
+		//if succesful set class variables for currentUSER, and userPassword
+		
+		if(currentUser!=null) {
+			displayUserOptions();
+		}
+		else setLogin();
+		
+		
+	}
+	
+	public static void displayUserOptions() {
+		
+		int respon;
+		System.out.println("You are logged in as "+currentUser);
+		
+		System.out.println("Enter 1 to view Your current accounts");
+		System.out.println("Press 2 if yo would like to make a Withdrawl");
+		System.out.println("Press 3 if yo would like to make a Deposit");
+		System.out.println("Press 4 to logout");
+		
+		respon=keyboard.nextInt();
+		
+		if (respon==1) {
+			listCurrentUserAccounts();
+		}
+		if (respon==2) {
+			Withdrawl();
+		}
+		if (respon==3) {
+			Deposit();
+		}
+		
+		if (respon==4) {
+			currentUser=null;
+			userPassword=null;
+			startMenu();
+		}
+	}
+	
+	
+
+	private static void Deposit() {
+		
+		int chosenAcc;
+		double depositAmount;
+		listCurrentUserAccounts();
+		System.out.println("Enter the acct id of the account you wish to Deposit into.");
+		chosenAcc=keyboard.nextInt();
+		System.out.println("Please enter the amount of money You are depositing");
+		depositAmount=keyboard.nextDouble();
+		/*
+		 * 
+		 Add logic to insert chosen deposit amount into acct with matching acc ID
+		 */
+	}
+
+	private static void Withdrawl() {
+		int chosenAcc1;
+		double depositAmount1;
+		listCurrentUserAccounts();
+		System.out.println("Enter the acct id of the account you wish to Deposit into.");
+		chosenAcc1=keyboard.nextInt();
+		System.out.println("Please enter the amount of money You are depositing");
+		depositAmount1=keyboard.nextDouble();
+		/*
+		 * add logic here to check chosen withdrawl amount with balance of account selected from 
+		 * db with the acct id that matches
+		 */
+	}
+
+	private static void listCurrentUserAccounts() {
+		
+		
+		
+		
+		
+		
+		//after putting user accounts to string in an array i will loop through
+		//and print the acct number/balance/and acct id so the user can then use
+		//this information to choose an account to deposit or withdraw to
+		System.out.println("");
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

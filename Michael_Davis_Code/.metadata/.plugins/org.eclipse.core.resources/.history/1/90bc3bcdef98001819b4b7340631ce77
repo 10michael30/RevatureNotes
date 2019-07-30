@@ -1,0 +1,13 @@
+package q8;
+
+import java.util.ArrayList;
+
+public class PalinDrome {
+ArrayList<String> a=new ArrayList<String>();
+ArrayList<String> b=new ArrayList<String>();
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

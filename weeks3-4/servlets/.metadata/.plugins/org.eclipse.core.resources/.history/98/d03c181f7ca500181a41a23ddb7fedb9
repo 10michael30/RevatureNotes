@@ -1,0 +1,10 @@
+package com.ex.servlets;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet('/home')
+public class HomeServlet {
+	
+	
+
+}

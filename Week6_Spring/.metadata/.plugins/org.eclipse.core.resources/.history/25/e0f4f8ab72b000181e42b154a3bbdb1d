@@ -1,0 +1,27 @@
+package com.ex.autowire;
+
+import org.springframework.stereotype.Component;
+
+//dependency using spring annotations
+
+@Component
+public class Department {
+private String name;
+
+public String getName() {
+	return name;
+}
+
+public Department() {
+	super();
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public Department(String name) {
+	super();
+	this.name = name;
+}
+}

@@ -1,0 +1,68 @@
+package com.ex.models;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+import javax.validation.constraints.Min;
+
+@Entity
+@Table(name = "BANK_ACCOUNTS")
+public class Account {
+
+	@Id
+	@Column(name = "ACC_ID")
+	@SequenceGenerator(name = "BU_ID", sequenceName = "BU_ID")
+	@GeneratedValue(generator = "BU_ID", strategy = GenerationType.SEQUENCE)
+
+	private int id;
+
+	@Column(nullable=false)
+	private User owner;
+	
+	@Column
+	private String name;
+	
+	@Column(nullable=false)
+	@Min(0)
+	private double balance;
+
+	public Account(int id, User owner, double balance) {
+		super();
+		this.id = id;
+		this.owner = owner;
+		this.balance = balance;
+	}
+
+	public Account() {
+		super();
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public User getOwner() {
+		return owner;
+	}
+
+	public void setOwner(User owner) {
+		this.owner = owner;
+	}
+
+	public double getBalance() {
+		return balance;
+	}
+
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+
+}

@@ -1,0 +1,41 @@
+package com.rev.menu;
+
+public class Account {
+
+private int accID;
+private int owner;
+private int accNumber;
+private String accType;
+private double balance;
+public int getAccID() {
+	return accID;
+}
+public void setAccID(int accID) {
+	this.accID = accID;
+}
+public int getOwner() {
+	return owner;
+}
+public void setOwner(int owner) {
+	this.owner = owner;
+}
+public int getAccNumber() {
+	return accNumber;
+}
+public void setAccNumber(int accNumber) {
+	this.accNumber = accNumber;
+}
+public String getAccType() {
+	return accType;
+}
+public void setAccType(String accType) {
+	this.accType = accType;
+}
+public double getBalance() {
+	return balance;
+}
+public void setBalance(double balance) {
+	this.balance = balance;
+}
+
+}

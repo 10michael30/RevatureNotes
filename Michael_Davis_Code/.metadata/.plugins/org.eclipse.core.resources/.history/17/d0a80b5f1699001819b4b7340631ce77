@@ -1,0 +1,8 @@
+package q18;
+
+public abstract class Parent1 {
+	
+	public abstract boolean checkUP();
+	
+
+}

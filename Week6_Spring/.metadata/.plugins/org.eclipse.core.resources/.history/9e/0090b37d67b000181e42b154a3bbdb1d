@@ -1,0 +1,24 @@
+package com.ex.hellospring;
+
+public class Helloworld {
+	
+	public Helloworld() {
+		super();
+	}
+
+	public Helloworld(String message) {
+		super();
+		this.message = message;
+	}
+
+	private String message;
+
+	public String getMessage() {
+		return message;
+	}
+
+	public void setMessage(String message) {
+		this.message = message;
+	}
+
+}

@@ -1,0 +1,24 @@
+package service;
+
+import java.util.List;
+
+import com.reimbursement.dao.Dao;
+import com.reimbursement.dao.UserDao;
+import com.reimbursement.pojos.User;
+
+public class UserService {
+
+static Dao<User, Integer> dao = new UserDao();
+	
+	public User findById(int id) {
+		return dao.findOne(id);
+	}
+
+	public List<User> getAll(){
+		return dao.getAll();
+	}
+	
+	public User addBook(User b){
+		return dao.save(b);
+	}
+}

@@ -1,0 +1,29 @@
+package com.ex.app;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.ex.dao.BearDao;
+import com.ex.pojos.Bear;
+import com.ex.util.ConnectionUtil;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		Bear b=new Bear();
+		b.setBreed("Polar");
+		b.setFurColor("Brown");
+		b.setHeight(80.9);
+		
+		BearDao a=new BearDao();
+		a.addBear(b);
+		
+		
+		
+	}
+	static void addBearDemo() {
+		Session session= ConnectionUtil.getSession();
+		Transaction tx=session.beginTransaction();
+	}
+
+}

@@ -1,0 +1,33 @@
+package q19;
+
+import java.util.ArrayList;
+
+public class ArrayWork {
+	ArrayList<Integer> a=new ArrayList<>();
+	
+	public ArrayWork() {
+		
+		a.add(1);
+		a.add(2);
+		a.add(3);
+		a.add(4);
+		a.add(5);
+		a.add(6);
+		a.add(7);
+		a.add(8);
+		a.add(9);
+		a.add(10);
+		
+		int eventotal=0;
+		int oddtotal=0;
+		
+		for(int b:a) {
+			if(b%2==0) {
+				eventotal+=b;
+			}
+			else oddtotal+=b;
+			
+		}
+		
+	}
+}

@@ -1,0 +1,22 @@
+package q3;
+
+public class ReverseString {
+	
+	 static String Reverse(String a) {
+		
+		
+		
+		
+		
+		
+		
+		
+		return "";
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

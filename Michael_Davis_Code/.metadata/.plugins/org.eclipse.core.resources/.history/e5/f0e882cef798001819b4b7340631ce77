@@ -1,0 +1,13 @@
+package q11;
+
+import q9.Primes;
+
+public class FloatAccess {
+Primes a=new Primes();
+
+
+
+public static void main(String[] args) {
+	
+}
+}

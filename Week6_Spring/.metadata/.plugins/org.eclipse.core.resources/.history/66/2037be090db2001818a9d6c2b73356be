@@ -1,0 +1,18 @@
+package com.ex.controller;
+
+
+@AuthorController("/authors")
+public class AuthorController {
+	
+	@Autowired
+	private AuthorService authService;
+	
+	
+@RequestMapping(method=RequestMethod.GET,produces=MediaType.APPLICATION_JSON_VALUE)
+	public ResponseEntity<List<Author>> getAll(){
+	
+	
+	
+}
+
+}

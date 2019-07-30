@@ -1,0 +1,29 @@
+package q13;
+
+import java.util.ArrayList;
+
+public class Triangle {
+	
+	
+	
+	public void printTri() {
+		int count=2;
+		
+		ArrayList<String> a2=new ArrayList<String>();
+		a2.add("0");
+		a2.add("10");
+		a2.add("101");
+		a2.add("0101");
+		
+		for(String a:a2) {
+			System.out.println(a);
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+}

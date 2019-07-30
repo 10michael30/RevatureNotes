@@ -1,0 +1,8 @@
+package com.ex.models;
+
+public class Account {
+private int id;
+private User owner;
+private double balance;
+
+}

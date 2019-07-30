@@ -1,0 +1,23 @@
+import java.util.*;
+public class demonstrate {
+	public demonstrate(String name, int age) {
+		int g=0;
+		while(g<name.length()) {
+			
+			System.out.print(name.charAt(g));
+			g++;
+		}
+		
+		
+		
+		
+	}
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

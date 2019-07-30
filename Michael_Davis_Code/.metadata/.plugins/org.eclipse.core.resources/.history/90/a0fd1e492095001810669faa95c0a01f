@@ -1,0 +1,73 @@
+
+public class Checkings extends Account {
+	String accType;
+	int accNumber;
+	int pin;
+	String name;
+	String phone;
+	public Checkings() {
+		
+		
+	}
+
+
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Checkings a=new Checkings();
+		
+
+	}
+
+
+
+
+
+	void setUpAcc(String accType,int accNum,int pin,String name, String phone) {
+		
+		
+	}
+
+
+
+
+	@Override
+	void checkAccType() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	void checkAccNumber() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	void resetPin() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+	@Override
+	void setUpAcc() {
+		this.accNumber=accountNumbersList;
+		accountNumbersList+=1;
+		
+	}
+	
+
+
+
+
+	
+
+
+}

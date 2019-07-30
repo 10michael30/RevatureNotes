@@ -1,0 +1,57 @@
+package com.rev.menu;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BankMenu {
+	private String currentUser;
+	private String userPassword;
+	private String holder;
+	private ArrayList<String> holderArray;
+	static Scanner keyboard=new Scanner(System.in);
+	
+	public static void startMenu() {
+		String response;
+		
+		System.out.println("Welcome to Mike's Bank. Do you already have an Account with us?");
+		System.out.println("Type Yes or No");
+		response=keyboard.nextLine();
+		
+		if(response.equalsIgnoreCase("YES")) {
+			
+		}
+		
+		else if(response.equalsIgnoreCase("NO")) {
+			createAccount();
+		}
+		else startMenu();
+		
+		
+		
+	}
+	
+	public static void createAccount() {
+		String firstname;
+		String lastname;
+		String email;
+		String phone;
+		String username;
+		String password;
+		
+		
+	}
+	public static void setLogin() {
+		String usr;
+		String pwd;
+		
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

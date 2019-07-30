@@ -1,0 +1,57 @@
+package q12;
+
+import java.util.ArrayList;
+
+import q6.EvenOrOdd;
+
+public class arrayEvens {
+	public static int calc(int a){
+		
+		int h=a;
+		int holder=0;
+		while(h>1) {
+			
+			holder=h/2;
+			h=holder;
+		}
+		
+		if(holder/2!=1) {
+			return 1;
+		}
+		if(holder/2==1) {
+			return 0;
+		}
+		
+		else return 5;
+		
+		
+		
+	}
+
+	 static void arrayEvensc() {
+			int[] t=new int[100];
+			ArrayList<Integer> g=new ArrayList<>();
+			
+		for(int i=0;i<100;i++) {
+			if(i==0) {
+			
+			}
+			t[i]=i+1;
+		}
+		
+		
+		for(int b:t) {
+			if(calc(b)==0) {
+				g.add(b);
+				System.out.println(b);
+			}
+		}
+		System.out.println(g.toString());
+		
+	}
+	public static void main(String[] args) {
+		arrayEvensc();
+
+	}
+
+}

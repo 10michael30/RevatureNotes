@@ -1,0 +1,27 @@
+package q20;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class fileWrite {
+
+	void addEntries() {
+
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter("src/files/Data.txt",true));){
+			bw.write("Mickey:Mouse:35:Arizona");
+			bw.write("Hulk:Hogan:50:Virginia");
+			bw.write("Roger:Rabbit:22:California");
+			bw.write("Wonder:Woman:18:Montana");
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} 
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

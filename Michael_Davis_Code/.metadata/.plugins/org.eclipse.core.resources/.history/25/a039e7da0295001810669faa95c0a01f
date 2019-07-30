@@ -1,0 +1,20 @@
+
+public abstract class Account {
+
+	
+	
+	static void setUpAcc() {
+		
+	};
+	
+	 void checkAccType() {
+		
+	}
+	public void checkAccNumber() {
+		
+	}
+	
+	public void resetPin() {
+		
+	}
+}

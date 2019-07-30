@@ -1,0 +1,28 @@
+package q4;
+
+public class compFactorial {
+	
+	
+	
+	public int compute(int n) {
+		
+		int holder=n;
+		int result=0;
+		
+		while(holder>0) {
+			
+			result= result+(n*n-1);
+			n--;
+			
+		}
+		
+		
+		return 0;
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

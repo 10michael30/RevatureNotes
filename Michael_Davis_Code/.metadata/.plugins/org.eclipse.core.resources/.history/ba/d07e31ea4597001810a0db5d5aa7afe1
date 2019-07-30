@@ -1,0 +1,20 @@
+package designpatterns;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		/*
+		Singleton s=Singleton.getInstance();
+		s.name='first instance';
+		
+		Singleton s2=Singleton.getInstance
+				
+			*/	
+	LazySingleton lazy=LazySingleton.getInstance();
+	LazySingleton lazy2=LazySingleton.getInstance();
+	
+
+	}
+
+}

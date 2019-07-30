@@ -1,0 +1,61 @@
+package com.ex.pojos;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="BEARS")
+public class Bear {
+	private int beardId;
+private String breed;
+	private String furColor;
+	private double height;
+	
+	
+	
+	
+	public Bear() {
+		super();
+	}
+	
+	
+	public Bear(int beardId, String breed, String furColor, double height) {
+		super();
+		this.beardId = beardId;
+		this.breed = breed;
+		this.furColor = furColor;
+		this.height = height;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Bear [beardId=" + beardId + ", breed=" + breed + ", furColor=" + furColor + ", height=" + height + "]";
+	}
+	public int getBeardId() {
+		return beardId;
+	}
+	public void setBeardId(int beardId) {
+		this.beardId = beardId;
+	}
+	public String getBreed() {
+		return breed;
+	}
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+	public String getFurColor() {
+		return furColor;
+	}
+	public void setFurColor(String furColor) {
+		this.furColor = furColor;
+	}
+	public double getHeight() {
+		return height;
+	}
+	public void setHeight(double height) {
+		this.height = height;
+	}
+	
+	
+}

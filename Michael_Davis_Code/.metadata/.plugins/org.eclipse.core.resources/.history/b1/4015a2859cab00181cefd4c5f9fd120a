@@ -1,0 +1,21 @@
+package com.ex.app;
+
+import com.ex.dao.BearDao;
+import com.ex.pojos.Bear;
+
+public class Main {
+	
+	public static void Main(String[] args) {
+		Bear b=new Bear();
+		b.setBreed("Polar");
+		b.setFurColor("Brown");
+		b.setHeight(80.9);
+		
+		BearDao a=new BearDao();
+		a.addBear(b);
+		
+		
+		
+	}
+
+}

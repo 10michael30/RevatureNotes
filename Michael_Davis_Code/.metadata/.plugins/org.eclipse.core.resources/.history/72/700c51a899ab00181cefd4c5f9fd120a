@@ -1,0 +1,83 @@
+package com.ex.pojos;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="BEARS")
+public class Bear {
+	@Id
+	@Column(name="B_ID")
+	@SequenceGenerator(name="b_seq_gen",sequenceName="BEAR_SEQ")
+	@GeneratedValue(generator="b_seq_gen",strategy=GenerationType.SEQUENCE)
+	private int bearId;
+	
+	@Column(nullable=false)
+private String breed;
+	@Id
+	@Column
+	private String furColor;
+	@Id
+	@Column
+	private double height;
+	
+	@ManyToOne(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
+	@JoinColumn(name="BEAR_CAVE")
+	private Cave home;
+	
+	
+	
+	
+	public Bear() {
+		super();
+	}
+	
+	
+	public Bear(int beardId, String breed, String furColor, double height) {
+		super();
+		this.bearId = beardId;
+		this.breed = breed;
+		this.furColor = furColor;
+		this.height = height;
+	}
+
+
+	@Override
+	public String toString() {
+		return "Bear [beardId=" + bearId + ", breed=" + breed + ", furColor=" + furColor + ", height=" + height + "]";
+	}
+	public int getBearId() {
+		return bearId;
+	}
+	public void setBearId(int beardId) {
+		this.bearId = beardId;
+	}
+	public String getBreed() {
+		return breed;
+	}
+	public void setBreed(String breed) {
+		this.breed = breed;
+	}
+	public String getFurColor() {
+		return furColor;
+	}
+	public void setFurColor(String furColor) {
+		this.furColor = furColor;
+	}
+	public double getHeight() {
+		return height;
+	}
+	public void setHeight(double height) {
+		this.height = height;
+	}
+	
+	
+}

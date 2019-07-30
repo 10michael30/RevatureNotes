@@ -1,0 +1,10 @@
+package com.rev.menu;
+
+public class Account {
+
+private int accID;
+private int owner;
+private int accNumber;
+private String accType;
+private double balance;
+}

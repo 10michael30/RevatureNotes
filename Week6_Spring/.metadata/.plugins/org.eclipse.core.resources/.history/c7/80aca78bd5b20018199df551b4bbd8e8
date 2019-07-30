@@ -1,0 +1,14 @@
+#change port
+server.port=8888
+
+spring.datasource.url=jdbc:oracle:thin:@mdavisdb.casvmhchbrk0.us-east-1.rds.amazonaws.com:1521/ORCL
+spring.datasource.username=mdavisdb
+spring.datasource.password=password!
+spring.datasource.driver-class-name=oracle.jdbc.driver.OracleDriver
+#how to acess beans via request
+endpoints.beans.id=springbeans
+#if true require authorization to show over http
+endpoints.beans.sensitive:false
+
+# allow to be acessed
+endpoints.beans.enabled=true

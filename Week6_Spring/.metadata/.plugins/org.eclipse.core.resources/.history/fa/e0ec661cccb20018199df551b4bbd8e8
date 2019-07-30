@@ -1,0 +1,49 @@
+package com.ex.aspects;
+
+import org.aspectj.lang.JoinPoint;
+import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.*;
+
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect
+public class BasicAspect {
+	
+	//ADVICE-to be applied before every method indicated in the pointcut
+	
+	
+	//must specify point cut in parenthessess below which is set of methods you want it to apply too
+	//first star is class second star is method
+	//(...) decides parameters
+	@Before("execution(* com.ex.controller.*.* (..))")
+	public void helloControllers() {
+		System.out.println("Welcome to Spring AOP");
+	}
+	
+	@After("execution(* com.ex.controller.*.* (..)) && execution(* com.ex.service.*.* (..))")
+	public void afterAdvice(JoinPoint jp) {
+		
+		System.out.println("Method Executing after "+jp.getSignature());
+		
+	}
+	
+	
+	//most powerful
+	@Around("everywhere()")
+	public void doAround(ProceedingJoinPoint pjp) {
+		System.out.println("In around advice before "+pjp.getSignature());
+		try {
+			pjp.proceed();
+		} catch (Throwable e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("In around advice after "+ pjp.getSignature());
+		
+	}
+	
+	@Pointcut("execution(* com.ex..* (..))")
+	public void everywhere() {}
+
+}

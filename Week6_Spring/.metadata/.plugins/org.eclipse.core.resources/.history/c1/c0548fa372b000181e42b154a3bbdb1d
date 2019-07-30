@@ -1,0 +1,24 @@
+package com.ex.autowire;
+
+//dependency using spring annotations
+
+public class Department {
+private String name;
+
+public String getName() {
+	return name;
+}
+
+public Department() {
+	super();
+}
+
+public void setName(String name) {
+	this.name = name;
+}
+
+public Department(String name) {
+	super();
+	this.name = name;
+}
+}

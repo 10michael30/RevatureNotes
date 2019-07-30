@@ -1,0 +1,6 @@
+package com.ex.beans;
+
+public class Genre {
+private int id;
+private String name;
+}

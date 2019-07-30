@@ -1,0 +1,5 @@
+package living;
+
+public interface livable {
+
+}

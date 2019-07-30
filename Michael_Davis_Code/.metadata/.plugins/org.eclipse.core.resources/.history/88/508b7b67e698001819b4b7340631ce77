@@ -1,0 +1,31 @@
+package q4;
+
+public class compFactorial {
+	static int o=0;
+	static int result2=0;
+	
+	static int compute(int n) {
+		
+		o=n;
+		
+		while(o>0) {
+			result2=(o*o-1);
+					o--;
+					System.out.println(result2);
+			
+		}
+		
+		
+		return result2;
+		
+
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		System.out.println(compute(4));
+
+	}
+
+}

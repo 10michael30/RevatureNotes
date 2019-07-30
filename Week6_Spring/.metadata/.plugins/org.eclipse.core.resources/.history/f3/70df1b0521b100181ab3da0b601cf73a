@@ -1,0 +1,24 @@
+package com.ex.beans;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+
+@Entity
+public class Author {
+	
+	
+	@Id
+	@Column(name="Author_Id")
+	@SequenceGenerator(name="A_seq_gen",sequenceName="Author_SEQ",allocationSize=1)
+	@GeneratedValue(generator="A_seq_gen",strategy=GenerationType.SEQUENCE)
+	private int id;
+	private String firstName;
+	private String lastName;
+	private String bio;
+	
+
+}

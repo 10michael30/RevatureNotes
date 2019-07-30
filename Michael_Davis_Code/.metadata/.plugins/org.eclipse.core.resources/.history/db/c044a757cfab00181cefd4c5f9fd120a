@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Update Reimbursement</title>
+</head>
+<body>
+<div class="jumbotron">
+		<h1>Hello Please fill out the fields below for your Reimbursement</h1>
+		<br>
+		<form method="post" action="addReimbursement">
+		<!-- amount,submitted,resolved,description,receipt,author,resolver,statusid,typeid -->
+			<input type="number" name="amount" class="form-control" step=".01" placeholder="Reimbursement Amount">
+			<input type="text" name="description" class="form-control" placeholder="Description">
+	
+ <fieldset>
+        <legend>Approve or Deny Reimbursements</legend>
+
+        <div>
+            <input type="radio" id="food" name="type" value='3' />
+            <label for="food">Food</label>
+        </div>
+
+        <div>
+            <input type="radio" id="lodging" name="type" value='1' />
+            <label for="lodging">Lodging</label>
+        </div>
+
+        <div>
+            <input type="radio" id="travel" name="type" value='2' />
+            <label for="travel">Travel</label>
+        </div>
+        <div>
+            <input type="radio" id="other" name="type" value=4 />
+            <label for="other">Other</label>
+        </div>
+
+    </fieldset>
+				<input type="submit" value="Add Reimbursement">
+		</form>
+	</div>
+</body>
+</html>

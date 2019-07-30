@@ -1,0 +1,24 @@
+package q14;
+
+public class SwitchExample {
+	
+	
+	public void SwitchExample(int a){
+		
+		switch(a){
+			case 1:
+				
+			case 2:
+				
+			case 3:
+			
+		}
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

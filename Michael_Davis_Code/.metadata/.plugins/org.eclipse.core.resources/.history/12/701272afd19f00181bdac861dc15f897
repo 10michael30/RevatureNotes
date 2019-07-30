@@ -1,0 +1,118 @@
+package com.rev.menu;
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class BankMenu {
+	private static String currentUser;
+	private String userPassword;
+	private String holder;
+	private ArrayList<String> holderArray;
+	static Scanner keyboard=new Scanner(System.in);
+	
+	public static void startMenu() {
+		String response;
+		
+		System.out.println("Welcome to Mike's Bank. Do you already have an Account with us?");
+		System.out.println("Type Yes or No");
+		response=keyboard.nextLine();
+		
+		if(response.equalsIgnoreCase("YES")) {
+			setLogin();
+		}
+		
+		else if(response.equalsIgnoreCase("NO")) {
+			createAccount();
+		}
+		else startMenu();
+		
+		
+		
+	}
+	
+	public static void createAccount() {
+		String firstname;
+		String lastname;
+		String email="";
+		String phone;
+		String username;
+		String password;
+		String password2;
+		Boolean c=false;
+		Boolean pwdMatch=false;
+		
+		System.out.println("Enter your First Name");
+		firstname=keyboard.next();
+		
+		System.out.println("Enter your Last Name");
+		lastname=keyboard.next();
+		System.out.println("Enter your current Email Address");
+		email=keyboard.next();
+		if((email.contains("@"))&&(email.contains("."))){
+			c=true;
+		}
+		while(c==false) {
+			System.out.println("invalid email address. Please Re-Enter a valid email");
+			email=keyboard.next();
+			
+			if((email.contains("@"))&&(email.contains("."))){
+				c=true;
+			}
+			
+		}
+		
+		System.out.println("Enter your phone number");
+		phone=keyboard.next();
+		
+		System.out.println("Enter your desired username");
+		username=keyboard.next();
+		//going to have to already have logic here to check if username is already taken
+		//can put up at the top and store 
+	
+		while(pwdMatch=false) {
+		System.out.println("Enter a Password for your account");
+		password=keyboard.next();
+		System.out.println("Re enter your password");
+		password2=keyboard.next();
+		
+		if (password.equals(password2)) {pwdMatch=true;}
+		}
+		
+		
+		//PUT LOGIC TO INSERT INTO USERS TABLE USING VARIABLES HERE
+		
+		
+	}
+	public static void setLogin() {
+		String usr;
+		String pwd;
+		
+		System.out.println("Please enter your Username");
+		usr=keyboard.next();
+		
+		if(usr.length()>20) { 
+			System.out.println("Invalid Username");
+			setLogin();}
+		System.out.println("Please enter your password");
+		pwd=keyboard.next();
+		
+		
+		//ADD LOGIN TO CHECK FOR MATCHING INFO IN DB
+		
+		//if succesful set class variables for currentUSER, and userPassword
+		
+		if(currentUser!=null) {
+			
+		}
+		
+		
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

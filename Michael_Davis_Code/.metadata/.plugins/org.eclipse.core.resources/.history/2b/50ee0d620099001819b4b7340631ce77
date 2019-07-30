@@ -1,0 +1,18 @@
+package q13;
+
+public class Triangle {
+	
+	
+	
+	public void printTri() {
+		int count=2;
+		String a="";
+		String b="";
+		
+		
+		
+		
+		
+	}
+
+}

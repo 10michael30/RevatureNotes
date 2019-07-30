@@ -1,0 +1,30 @@
+package q2;
+import java.util.*;
+
+public class Fibon {
+
+	ArrayList<Integer> lis= new ArrayList<>();
+	
+	int[] ge=new int[25];
+	public int a;
+	
+	public Fibon(){
+		
+		int a=0;
+		
+		while (a<=25) {
+		
+			
+		}
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

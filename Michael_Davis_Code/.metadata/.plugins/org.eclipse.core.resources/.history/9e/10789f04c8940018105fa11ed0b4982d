@@ -1,0 +1,49 @@
+import java.util.*;
+public class FizzBuzz {
+	
+	//Scanners
+	//wrapper classes
+	//Strings
+	//ararys
+	
+	public String FizzBuzz(int n) {
+		String output="";
+		int i=0;
+		while(i<n) {
+		if((n-1)/3==0){
+			System.out.print("Fizz");
+			
+		}
+		else if((n-1)/5==0){
+			System.out.print("Buzz");
+			
+		}
+		else if((n-1)/15==0){
+			System.out.print("FizzBuzz");
+			
+		}
+		else {
+			System.out.print(1-n);
+		}
+		}
+		
+
+		
+		
+		
+		
+		return output;
+		
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		/*Scanner x=new Scanner(System.in);
+		 * 
+		 * 
+		 * 
+		 */
+	}
+
+}

@@ -1,0 +1,26 @@
+package q17;
+
+import java.util.Scanner;
+
+public class Interest {
+
+	
+	public Interest() {
+		double g;
+		Scanner t= new Scanner(System.in);
+		System.out.println("Enter the amount you borrowed");
+		g=t.nextDouble();
+		g=g*.1;
+		
+		
+		double g=principal*.1;
+		double e=roi*.1;
+		return g*e*years;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		InterestCalc(25000,5,10);
+
+	}
+
+}

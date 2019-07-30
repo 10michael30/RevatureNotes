@@ -1,0 +1,20 @@
+package service;
+
+import java.util.List;
+
+import com.reimbursement.dao.Dao;
+import com.reimbursement.dao.UserDao;
+import com.reimbursement.pojos.User;
+
+public class UserService {
+
+static Dao<Genre, Integer> dao = new GenreDao();
+	
+	public Genre findById(int id) {
+		return dao.findOne(id);
+	}
+
+	public List<Genre> getAll(){
+		return dao.getAll();
+	}
+}

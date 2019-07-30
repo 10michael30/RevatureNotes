@@ -1,0 +1,6 @@
+package living;
+
+public class TEST {
+	Dog d=new Dog();
+
+}

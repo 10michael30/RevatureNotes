@@ -1,0 +1,12 @@
+
+public interface Account {
+
+	
+	
+     public void setUpAcc();
+	
+	public void checkAccType();
+	public void checkAccNumber();
+	
+	public void resetPin();
+}

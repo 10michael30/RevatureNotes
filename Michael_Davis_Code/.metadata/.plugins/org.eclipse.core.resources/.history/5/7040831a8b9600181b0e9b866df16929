@@ -1,0 +1,20 @@
+
+public class Driver {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Student S=new Student("nextaffter","atta@u.com",87.05);
+Student S2=new Student("testers","atta@u.com",87.05);
+Student S3=new Student("zzzzzz","atta@u.com",87.05);
+
+//System.out.println(S);
+
+
+
+TextDao d=new TextDao();
+
+d.addStudent(S);
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package com.ex.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.ex.beans.Author;
+import com.ex.repository.AuthorRepository;
+
+public class AuthorService {
+
+	
+	
+	@Autowired
+	private AuthorRepository authorRepo;
+	
+	
+	public Author addAuthor(Author a) {
+		
+		
+		
+		
+		return authorRepo.add(a);
+		
+		
+		
+	}
+}

@@ -1,0 +1,34 @@
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class TextDao {
+//Class used to read from and write to text file
+	
+	
+	void addStudent(Student g) {
+		//name:email:grade
+		/*
+		 * bufferedWriter
+		 * FileWriter
+		 * 
+		 * try with resources
+		 * paramaterized try block used with classes the implement 
+		 * auto closable interface so
+		 * that you do not need a finally block to close
+		 * resources
+		 * 
+		 */
+		try(BufferedWriter bw=new BufferedWriter(new FileWriter("src/Files/students.txt"));) {
+			bw.write("TESTING");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package com.revature.config;
+
+import java.util.Properties;
+
+import org.springframework.context.annotation.Configuration;
+
+
+//tells ioc container that this class contains bean
+@Configuration
+public class RepositoryConfig {
+	
+	
+	//Helper method to retrieve our hibernate properties file
+	
+private Properties getHibernateProperties() {
+	Properties props=null;
+	
+	
+	
+	return null;
+}
+
+}

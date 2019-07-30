@@ -1,0 +1,13 @@
+
+public abstract class Account {
+
+	
+	
+     abstract void setUpAcc();
+	
+	abstract void checkAccType();
+	abstract void checkAccNumber();
+	
+	abstract void resetPin();
+
+}

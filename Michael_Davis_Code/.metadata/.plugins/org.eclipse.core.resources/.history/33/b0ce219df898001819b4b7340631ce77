@@ -1,0 +1,10 @@
+package q12;
+
+public class arrayEvens {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.ex.hellospring;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class app {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext context= new ClassPathXmlApplicationContext("beans.xml");
+		
+		//must cast the object
+		Helloworld world=(Helloworld)context.getBean("thisIsABean");
+		//Spring does not use the new keyword for its beans
+		
+		System.out.println(world.getMessage());
+		
+		
+		DepBean dep=(DepBean)context.getBean("dependent");
+	}
+
+}

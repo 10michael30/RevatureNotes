@@ -1,0 +1,20 @@
+package q2;
+import java.util.*;
+
+public class Fibon {
+
+	
+	int c=0;
+	
+	while(c<=25) {
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+
+	}
+
+}

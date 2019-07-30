@@ -1,0 +1,8 @@
+package q19;
+
+import java.util.ArrayList;
+
+public class ArrayWork {
+	ArrayList<Integer> a=new ArrayList<>();
+
+}
